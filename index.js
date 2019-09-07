@@ -37,9 +37,8 @@ let state = initialState;
 
 // actions
 const addTodo = () => {
-  const id = state.todos.length + 1;
   const todo = {
-    id,
+    id: state.todos.length + 1,
     value: state.currentTodo
   };
 
